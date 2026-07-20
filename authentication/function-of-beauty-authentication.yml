@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: https://functionofbeauty.com/.well-known/openid-configuration
+docs: https://shopify.dev/docs/api/customer
+note: >-
+  Function of Beauty is a Shopify-hosted store. Its customer-facing authentication
+  surface is the Shopify Customer Account API, exposed via OpenID Connect discovery
+  on the provider domain. The scheme below is read verbatim from the live
+  openid-configuration document.
+summary:
+  types:
+  - openIdConnect
+  - oauth2
+  oauth2_flows:
+  - authorizationCode
+  pkce: true
+schemes:
+- name: shopifyCustomerAccount
+  type: openIdConnect
+  openIdConnectUrl: https://functionofbeauty.com/.well-known/openid-configuration
+  issuer: https://shopify.com/authentication/69081399608
+  authorization_endpoint: https://shopify.com/authentication/69081399608/oauth/authorize
+  token_endpoint: https://shopify.com/authentication/69081399608/oauth/token
+  end_session_endpoint: https://shopify.com/authentication/69081399608/logout
+  jwks_uri: https://shopify.com/authentication/69081399608/.well-known/jwks.json
+  response_types_supported:
+  - code
+  grant_types_supported:
+  - authorization_code
+  - refresh_token
+  - 'urn:ietf:params:oauth:grant-type:jwt-bearer'
+  token_endpoint_auth_methods_supported:
+  - client_secret_basic
+  id_token_signing_alg_values_supported:
+  - RS256
+  code_challenge_methods_supported:
+  - S256
+  sources:
+  - well-known/function-of-beauty-openid-configuration.json
