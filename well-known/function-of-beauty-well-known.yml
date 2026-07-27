@@ -1,0 +1,22 @@
+generated: '2026-07-19'
+method: searched
+source: live probe of https://functionofbeauty.com/.well-known/*
+host: https://functionofbeauty.com
+note: >-
+  Function of Beauty runs on Shopify. The 200 documents below are Shopify's
+  Customer Account API OpenID Connect / OAuth 2.0 discovery surface, served on
+  the provider's own domain. Note scopes_supported advertises a
+  customer-account-mcp-api:full scope (Shopify Customer Account MCP API).
+documents:
+- path: /.well-known/openid-configuration
+  status: 200
+  file: function-of-beauty-openid-configuration.json
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  file: function-of-beauty-oauth-authorization-server.json
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

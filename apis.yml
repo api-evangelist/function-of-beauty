@@ -1,8 +1,29 @@
 aid: function-of-beauty
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/function-of-beauty.png
 name: Function of Beauty
-description: 'Function of Beauty is a company surfaced as a portfolio company of ggv-capital and added
-  to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: >-
+  Function of Beauty is a direct-to-consumer beauty and personal-care brand built
+  around personalization, best known for quiz-driven customizable hair care
+  (shampoo and conditioner) and skin and body products formulated to an individual
+  profile. The company sells online through a Shopify-hosted storefront. Its
+  customer-facing programmatic surface is therefore the Shopify commerce platform:
+  a live hosted Storefront MCP server at /api/mcp (product search, cart, policies,
+  product details) and the Shopify Customer Account API exposed through OpenID
+  Connect discovery on the company domain. Function of Beauty was added to the API
+  Evangelist network as a GGV Capital portfolio company and enriched from its
+  public discovery surface.
 url: https://raw.githubusercontent.com/api-evangelist/function-of-beauty/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +33,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
-apis: []
+- Beauty
+- Personal Care
+- Personalization
+- E-Commerce
+- Shopify
+- Direct to Consumer
+- MCP
+apis:
+- name: Function of Beauty Storefront MCP
+  description: >-
+    Live hosted Shopify Storefront MCP server on the Function of Beauty domain,
+    exposing product catalog search, cart management, store policy/FAQ lookup, and
+    product detail tools over JSON-RPC 2.0.
+  humanURL: https://functionofbeauty.com/
+  baseURL: https://functionofbeauty.com/api/mcp
+  tags:
+  - MCP
+  - E-Commerce
+  - Shopify
+  properties:
+  - type: MCPServer
+    url: mcp/function-of-beauty-mcp.yml
+  - type: Authentication
+    url: authentication/function-of-beauty-authentication.yml
+  - type: OAuthScopes
+    url: scopes/function-of-beauty-scopes.yml
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +71,34 @@ maintainers:
 common:
 - type: Website
   url: https://functionofbeauty.com/
+- type: Support
+  url: https://functionofbeauty.com/pages/faq
+- type: Support
+  url: https://functionofbeauty.com/pages/contact-us
+- type: Blog
+  url: https://functionofbeauty.com/blogs/news
+- type: PrivacyPolicy
+  url: https://functionofbeauty.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://functionofbeauty.com/policies/terms-of-service
+- type: SignUp
+  url: https://functionofbeauty.com/account/register
+- type: Login
+  url: https://functionofbeauty.com/account/login
+- type: MCPServer
+  url: mcp/function-of-beauty-mcp.yml
+- type: WellKnown
+  url: well-known/function-of-beauty-well-known.yml
+- type: Authentication
+  url: authentication/function-of-beauty-authentication.yml
+- type: OAuthScopes
+  url: scopes/function-of-beauty-scopes.yml
+- type: DomainSecurity
+  url: security/function-of-beauty-domain-security.yml
+- type: LLMsTxt
+  url: llms/function-of-beauty-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: https://functionofbeauty.com/api/mcp
+status: published
+note: >-
+  Live hosted Shopify Storefront MCP server on the Function of Beauty domain.
+  Verified by an unauthenticated JSON-RPC tools/list call returning 200 with the
+  five tools below. This is the storefront (shopping) MCP; the store additionally
+  advertises a Shopify Customer Account MCP API scope (customer-account-mcp-api:full)
+  in its OpenID Connect discovery document (see well-known/).
+server:
+  name: function-of-beauty-storefront
+  transport: http
+  url: https://functionofbeauty.com/api/mcp
+  protocol: json-rpc-2.0
+  auth: none
+tools:
+- name: search_catalog
+  description: Search for products from the online store, hosted on Shopify (UCP catalog search capability).
+- name: get_cart
+  description: Get the cart including items, shipping options, discount info, and checkout url for a given cart id.
+- name: update_cart
+  description: Add/remove/update line items, buyer info, shipping, discount codes, gift cards and notes in one consolidated call.
+- name: search_shop_policies_and_faqs
+  description: Get facts about the store's policies, products, or services.
+- name: get_product_details
+  description: Look up a product by ID; pass options to select a specific variant.

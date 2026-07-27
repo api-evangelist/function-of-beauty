@@ -1,0 +1,24 @@
+# Function of Beauty
+
+> Function of Beauty is a direct-to-consumer personalization company in the beauty and personal-care space, best known for customizable hair care (shampoo, conditioner) and skin/body products formulated to a quiz-driven profile. The storefront runs on Shopify; its customer-facing programmatic surface is the Shopify Customer Account API (OpenID Connect). Backed by GGV Capital. This profile is maintained by the API Evangelist network.
+
+## Company
+- Website: https://functionofbeauty.com/
+- FAQ / Support: https://functionofbeauty.com/pages/faq
+- Contact: https://functionofbeauty.com/pages/contact-us
+- Blog: https://functionofbeauty.com/blogs/news
+- Privacy Policy: https://functionofbeauty.com/policies/privacy-policy
+- Terms of Service: https://functionofbeauty.com/policies/terms-of-service
+
+## Authentication & Discovery
+- OpenID Connect discovery: https://functionofbeauty.com/.well-known/openid-configuration
+- OAuth Authorization Server metadata: https://functionofbeauty.com/.well-known/oauth-authorization-server
+- Platform: Shopify Customer Account API (docs: https://shopify.dev/docs/api/customer)
+- Advertised scopes: openid, email, customer-account-api:full, customer-account-mcp-api:full
+
+## Artifacts (API Evangelist enrichment)
+- apis.yml: https://raw.githubusercontent.com/api-evangelist/function-of-beauty/refs/heads/main/apis.yml
+- Well-Known index: well-known/function-of-beauty-well-known.yml
+- Authentication profile: authentication/function-of-beauty-authentication.yml
+- OAuth scopes: scopes/function-of-beauty-scopes.yml
+- Domain security: security/function-of-beauty-domain-security.yml

@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: searched
+source: https://functionofbeauty.com/.well-known/openid-configuration
+docs: https://shopify.dev/docs/api/customer
+note: >-
+  Scopes advertised by the Shopify Customer Account API OpenID Connect discovery
+  document served on the Function of Beauty domain (scopes_supported). Captured
+  verbatim; descriptions are from Shopify's Customer Account API documentation.
+schemes:
+- name: shopifyCustomerAccount
+  source: well-known/function-of-beauty-openid-configuration.json
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://shopify.com/authentication/69081399608/oauth/authorize
+    tokenUrl: https://shopify.com/authentication/69081399608/oauth/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; issue an ID token for the customer.
+  flows: [authorizationCode]
+- scope: email
+  description: Access to the customer's email address and email_verified claim.
+  flows: [authorizationCode]
+- scope: customer-account-api:full
+  description: Full access to the Shopify Customer Account API for the signed-in customer.
+  flows: [authorizationCode]
+- scope: customer-account-mcp-api:full
+  description: Full access to the Shopify Customer Account MCP API for the signed-in customer.
+  flows: [authorizationCode]
