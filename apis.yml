@@ -74,6 +74,9 @@ apis:
     url: authentication/function-of-beauty-authentication.yml
   - type: OAuthScopes
     url: scopes/function-of-beauty-scopes.yml
+  x-surface: platform-generated
+  x-platform: shopify
+  x-platform-surface: storefront-mcp
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
