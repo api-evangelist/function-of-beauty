@@ -2,6 +2,27 @@
   "repo": "function-of-beauty",
   "feeds": [
     {
+      "source": "https://functionofbeauty.com/blogs/blog",
+      "feed_url": "https://functionofbeauty.com/blogs/blog.atom",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
+      "source": "https://functionofbeauty.com/blogs/blog.atom",
+      "feed_url": "https://functionofbeauty.com/blogs/blog.atom",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    },
+    {
+      "source": "https://functionofbeauty.com/blogs/news",
+      "feed_url": "https://functionofbeauty.com/blogs/news.atom",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://functionofbeauty.com/pages/contact-us",
       "feed_url": "https://functionofbeauty.com/pages/contact-us",
       "title": "",
@@ -10,5 +31,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-10-03T12:30:02Z"
+  "fetched": "2026-10-10T13:15:00Z"
 }
