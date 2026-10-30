@@ -64,6 +64,101 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Function of Beauty is a company surfaced as a portfolio company of ggv-capital and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.
+Function of Beauty is a direct-to-consumer beauty and personal-care brand built around personalization, best known for quiz-driven customizable hair care (shampoo and conditioner) and skin and body products formulated to an individual profile. The company sells online through a Shopify-hosted storefront. Its customer-facing programmatic surface is therefore the Shopify commerce platform: a live hosted Storefront MCP server at /api/mcp (product search, cart, policies, product details) and the Shopify Customer Account API exposed through OpenID Connect discovery on the company domain. Function of Beauty was added to the API Evangelist network as a GGV Capital portfolio company and enriched from its public discovery surface.
 
-Backed by: ggv-capital — https://functionofbeauty.com/
+**Areas:** Company · Consumer · Beauty · Personal Care · Personalization · E-Commerce · Shopify · Direct to Consumer · MCP
+
+## Function of Beauty on APIs.io
+
+Everything profiled for Function of Beauty is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/function-of-beauty/](https://apis.io/providers/function-of-beauty/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Function of Beauty Storefront MCP](https://apis.io/apis/function-of-beauty/function-of-beauty-storefront-mcp/) — Live hosted Shopify Storefront MCP server on the Function of Beauty domain, exposing product catalog search, cart management, store policy/FAQ lookup, and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [function-of-beauty-storefront](https://apis.io/servers/function-of-beauty/function-of-beauty-storefront/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Function Of Beauty Authentication](https://apis.io/security/function-of-beauty/function-of-beauty-authentication/)
+- [Function Of Beauty Domain Security](https://apis.io/security/function-of-beauty/function-of-beauty-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Function Of Beauty Scopes](https://apis.io/scopes/function-of-beauty/function-of-beauty-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://functionofbeauty.com/)
+- [Sign up](https://functionofbeauty.com/account/register)
+- [Support](https://functionofbeauty.com/pages/faq)
+- [Blog](https://functionofbeauty.com/blogs/blog)
+- [Terms of service](https://functionofbeauty.com/policies/terms-of-service)
+- [Privacy policy](https://functionofbeauty.com/policies/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 20.3** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 19.0 |
+| Access clarity | 34.2 |
+
+**Agent readiness 12.9** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/function-of-beauty/](https://apis.io/providers/function-of-beauty/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Function of Beauty: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/function-of-beauty/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
